@@ -13,7 +13,7 @@ pip install transformers datasets torch tensorboard
 ```
 
 ## Dataset
-The dataset used for training the model is the [Itihāsa dataset]([https://huggingface.co/datasets/rahular/itihasa]).
+The dataset used for training the model is the [Itihāsa dataset](https://huggingface.co/datasets/rahular/itihasa).
 Itihāsa is a Sanskrit-English translation corpus containing 93,000 Sanskrit shlokas and their English translations extracted from M. N. Dutt's seminal works on The Rāmāyana and The Mahābhārata.
 
 ## Training the Model
