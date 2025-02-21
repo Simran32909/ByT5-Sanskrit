@@ -1,6 +1,6 @@
 ﻿# Itihāsa Translation using ByT5 Model
 
-This project uses the ByT5 model, fine-tuned for Sanskrit to Eng translation. ByT5 is a transformer-based architecture that is used for sequence-to-sequence tasks, and in this project, it is trained to translate Sanskrit text into English.
+This project uses the ByT5 model, fine-tuned for Sanskrit to Eng translation. ByT5 is a pre-trained byte-to-byte model that is used for sequence-to-sequence tasks, and in this project, it is fine tuned and trained to translate Sanskrit text into English.
 
 ## Project Structure
 - `train.py`: Contains the code to train the ByT5 model. It loads the training, validation, and test datasets, preprocesses the data, and sets up the training arguments using `Seq2SeqTrainer`.
