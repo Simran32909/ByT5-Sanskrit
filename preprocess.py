@@ -16,12 +16,12 @@ def load_data(sanskrit_path, english_path):
         return None
 
 for split in ["train", "dev", "test"]:
-    sanskrit_path = f"C:/Users/simra/PycharmProjects/TextModels/dataset/{split}-sn.json"
-    english_path = f"C:/Users/simra/PycharmProjects/TextModels/dataset/{split}-en.json"
+    sanskrit_path = f"ByT5-Sanskrit/dataset/{split}-sn.json"
+    english_path = f"ByT5-Sanskrit/dataset/{split}-en.json"
     dataset = load_data(sanskrit_path, english_path)
 
     if dataset is not None:
         print(f"Saving {split} dataset.")
-        dataset.save_to_disk(f"C:/Users/simra/PycharmProjects/TextModels/dataset/{split}_hf")
+        dataset.save_to_disk(f"ByT5-Sanskrit/dataset/{split}_hf")
     else:
         print(f"Failed to load {split} dataset.")

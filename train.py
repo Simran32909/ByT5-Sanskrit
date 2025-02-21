@@ -1,9 +1,9 @@
 from datasets import load_from_disk
 from transformers import AutoTokenizer, AutoModelForSeq2SeqLM, Seq2SeqTrainer, Seq2SeqTrainingArguments
 
-train_dataset = load_from_disk(r'/dataset/smol_ds/train_hf.json')
-dev_dataset = load_from_disk(r'/dataset/smol_ds/test_hf.json')
-test_dataset = load_from_disk(r'/dataset/smol_ds/dev_hf.json')
+train_dataset = load_from_disk(r'/dataset/train_hf')
+dev_dataset = load_from_disk(r'/dataset/test_hf')
+test_dataset = load_from_disk(r'/dataset/dev_hf')
 
 print("Train dataset columns:", train_dataset.column_names)
 print("Dev dataset columns:", dev_dataset.column_names)
@@ -29,7 +29,7 @@ dev_dataset = dev_dataset.map(preprocess_function, batched=True)
 test_dataset = test_dataset.map(preprocess_function, batched=True)
 
 training_args = Seq2SeqTrainingArguments(
-    output_dir=r"C:\Users\simra\PycharmProjects\TextModels\models",
+    output_dir=r"ByT5-Sanskrit\models",
     evaluation_strategy="epochs",
     save_strategy="epochs",
     per_device_train_batch_size=4,

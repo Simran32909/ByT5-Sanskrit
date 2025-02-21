@@ -12,7 +12,7 @@ def test_model(text, model, tokenizer):
     return outputs
 
 # Usage
-model_path = r"C:\Users\simra\PycharmProjects\TextModels\models"
+model_path = r"ByT5-Sanskrit\models"
 model, tokenizer = load_model(model_path)
 
 text = "एतदिच्छाम्यहं श्रोतुं परं कौतूहलं हि मे। महर्षे त्वं समर्थोऽसि ज्ञातुमेवंविधं नरम्॥"
